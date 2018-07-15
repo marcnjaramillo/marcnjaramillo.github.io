@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Do What You Set Your Mind To Do"
-date:   2016-10-12 02:43:39 -0400
+title:      "Do What You Set Your Mind To Do"
+date:       2016-10-12 02:43:39 -0400
+permalink:  do_what_you_set_your_mind_to_do
 ---
 
 
