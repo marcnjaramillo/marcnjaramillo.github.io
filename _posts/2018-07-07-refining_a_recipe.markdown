@@ -17,17 +17,19 @@ I decided that I would take on the task of cleaning up my recipe manager project
 
 Okay, so I have to admit that this is pretty ambitious but I love to cook and I would love to have a place to keep all my favorite recipes handy and be able to easily add ingredients I need to a shopping list on my phone. Seems worth the effort, wouldn't you say?
 
-# Step 1
+## Step 1
 This project was initially fully RoR, but the subsequent iteration of this project required the use of jQuery to kick things up a notch (see what I did there?) on the front-end. I had to render an index page (the list of all items) and a show page (a detailed view of one item) without a page refresh using jQuery. Well, I initially got it working okay, but it didn't always behave as expected and still needs some refactoring. I figured I would start here and work out these bugs before I moved on to something else.
 
-# The Problem
+## The Problem
+
 The problem that I needed to address first was how my form was dynamically allowing for additional ingredients. In the first iteration I simply created the form with a fixed number of spaces for ingredients. 
 
 ![](https://media.giphy.com/media/cPKWZB2aaB3rO/giphy.gif)
 
 I know, I know...it was ugly. Not only that, it was impractical. If I set the number of possible ingredients at ten, then a simple recipe that only had two or three ingredients would be fine (provided I had a way to make sure empty records weren't being persisted to the database...which I did), but a more complex recipe that had more than ten ingredients couldn't be saved.
 
-# The First Solution
+## The First Solution
+
 Ideally I wanted a way to use jQuery to access the ingredient node while still using Rails form builder to make sure that the ingredients were still being associated to the recipe being created. The problem that I was running into was the fact that the ingredients were nested associations and not so easy to access. So what I came up with after watching a project feedback session and working with a Learn instructor:
 
 ```
@@ -43,7 +45,8 @@ So...I basically had to see what the form was creating in the actual HTML, and t
  
  Anothere issue that I noticed was that when I want to edit a recipe, that recipe does not repopulate in the form. I wasn't sure if this was a byproduct of my solution, but that was immaterial; the behavior I was getting was undesirable.
  
- # The New Solution
+ ## The New Solution
+ 
  I had avoided using gems because they seemed to be a bit like using a nail gun when a hammer and nail would suffice. I know gems are great tools, but for what I needed a gem was overkill. Well, I have since changed my mind. Slightly. I decided to use the cocoon gem to take care of this issue. So instead of the above code, I now have this:
  
 ```
@@ -86,7 +89,8 @@ What's happening here? Cocoon is being used to add an association (`:recipe_ingr
 
 ![](https://media.giphy.com/media/rjkJD1v80CjYs/giphy.gif)
 
-# Still Not Done
+## Still Not Done
+
 This was a lot of progress, but there is still a lot of work that needs to be done to make sure that this is working properly. I've seen examples of this at work, so I know it does. But I have to fix some of my models and controllers to make sure everything is in the right place. In retrospect, probably busted out the champagne a bit too soon...
 
 Until next time!
