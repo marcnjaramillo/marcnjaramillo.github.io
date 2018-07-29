@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Refining a Recipe"
+title:      "Refining a Recipe - Part 1"
 date:       2018-07-07 03:37:23 -0400
 permalink:  refining_a_recipe
 ---
