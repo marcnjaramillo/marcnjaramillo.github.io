@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Refining a Recipe - Part 2"
-date:       2018-07-15 03:38:47 +0000
+date:       2018-07-14 23:38:47 -0400
 permalink:  refining_a_recipe_-_part_2
 ---
 
@@ -30,7 +30,7 @@ First I had to update my models, controllers, and serializers. The first control
       ]
     )
   end
-	```
+```
 	
 Technically, this isn't an update so much as it is a return to something I had previously written in the first stage of the project. At the time, I was hard-coding *ALL* the ingredients and directions fields in the recipe form. I wanted to make these fields dynamic so that the user could click a button and add or remove fields as needed. I watched a video of Ari doing a project review with someone and they came up with the hijack trick I ended up using because they couldn't figure out how to dynamically add the Rails form helper fields without a gem. I was still struggling with some concepts, and I wasn't that familiar with using gems that weren't used in Learn lessons. I'm more comfortable with using gems now, and I decided to use the cocoon gem I mentioned [in this blog post](http://marcnjaramillo.com/refining_a_recipe).
 
