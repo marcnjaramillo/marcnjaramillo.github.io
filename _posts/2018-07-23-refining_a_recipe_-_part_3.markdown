@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Refining a Recipe - Part 3"
-date:       2018-07-23 06:21:04 +0000
+date:       2018-07-23 02:21:05 -0400
 permalink:  refining_a_recipe_-_part_3
 ---
 
 
 This week was a very busy week. I was asked last minute to go out of town to work a convention happening over the weekend, and I worked 45 hours in 4 days. I'm on my way home, but I am exhausted. For that reason, this will be a shorter post than usual.
 
-## What I Accomolished
+## What I Accomplished
 
 This week I worked on two things:
 
